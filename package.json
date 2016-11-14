@@ -4,7 +4,13 @@
   "description": "mailgun attached trello card creating mailer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "mocha --require test/helpers/setup.js",
+    "testCat": "mocha -R nyan --require test/helpers/setup.js",
+    "lint": "standard",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "cover": "nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test"
   },
   "author": "Ian Thorp",
   "license": "ISC",
@@ -39,10 +45,14 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "axios": "^0.15.2"
+    "axios": "^0.15.2",
+    "normalize.css": "^5.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/IanThorp/trello_mailer.git"
+  },
+  "directories": {
+    "test": "test"
   }
 }
