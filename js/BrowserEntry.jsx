@@ -1,13 +1,5 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-const ReactRouter = require('react-router')
-// const App = require('')
+const App = require('./Landing')
 
-const { match } = ReactRouter
-
-match({ history: App.History, routes: App.Routes }, (error, redirectLocation, renderProps) => {
-  if (error) {
-    return console.error('BrowserEntry require.ensure error', error)
-  }
-  ReactDOM.render(<App {...renderProps} />, document.getElementById('app'))
-})
+ReactDOM.render(<App />, document.getElementById('app'))
