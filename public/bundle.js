@@ -48,7 +48,7 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(34);
-	var App = __webpack_require__(172);
+	var App = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Landing\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
@@ -21418,31 +21418,6 @@
 
 	module.exports = ReactDOMNullInputValuePropHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(1);
-
-	var App = React.createClass({
-	  displayName: 'App',
-	  render: function render() {
-	    return React.createElement(
-	      'header',
-	      { className: 'header' },
-	      React.createElement(
-	        'h1',
-	        { className: 'branding' },
-	        'Trello Mailer'
-	      )
-	    );
-	  }
-	});
-
-	module.exports = App;
 
 /***/ }
 /******/ ]);

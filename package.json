@@ -10,6 +10,7 @@
     "lint": "standard",
     "build": "webpack",
     "watch": "webpack --watch",
+    "devServer": "node_modules/.bin/webpack-dev-server",
     "cover": "nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test"
   },
   "author": "Ian Thorp",
@@ -48,7 +49,8 @@
   "dependencies": {
     "axios": "^0.15.2",
     "mailgun-js": "^0.7.13",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "trello": "^0.5.1"
   },
   "repository": {
     "type": "git",
